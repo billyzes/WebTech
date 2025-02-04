@@ -15,6 +15,8 @@
 
 <body>
 
+<form method="POST" action="/login">
+    @csrf()
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -33,12 +35,13 @@
                     </div>
 
                     <div class="mb-3">
-                        <button class="btn btn-md btn-success">Login</button>
+                        <button type="submit" class="btn btn-md btn-success">Login</button>
                     </div>
 
                 </div>
             </div>
         </div>
+        </form>
 
 </body>
 
