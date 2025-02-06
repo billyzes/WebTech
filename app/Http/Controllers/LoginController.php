@@ -10,6 +10,6 @@ class LoginController extends Controller
         return view ('auth.login');
     }
     public function auth(Request $request){
-        echo "login logic";
+        return redirect (to:'inventory');
     }
 }

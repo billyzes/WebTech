@@ -15,15 +15,34 @@
 
 <body>
 
-<form method="POST" action="/login">
-    @csrf()
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-6">
+    <form method="POST" action="/login">
+        @csrf()
+        </br></br></br></br></br></br></br></br></br>
+        <div class="container">
+            <div class="row">
 
-
+                <div class="col-lg-5"></div>
+                <div class="card" style="width: 18rem;" content="width=device-width, initial-scale=1.0">
+                    <div class="card-body">
+                        
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Username</label>
+                                <input type="input" class="form-control" id="exampleInputEmail1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- 
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Username:</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1">
@@ -36,13 +55,9 @@
 
                     <div class="mb-3">
                         <button type="submit" class="btn btn-md btn-success">Login</button>
-                    </div>
+                    </div> -->
 
-                </div>
             </div>
         </div>
-        </form>
-
-</body>
-
-</html>
+        </div>
+    </form>
