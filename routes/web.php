@@ -11,3 +11,4 @@ Route::post('/login' ,'App\Http\Controllers\LoginController@auth' );
 
 Route::get('inventory','App\Http\Controllers\InventoryController@index');
 
+Route::get('/hello' ,'App\Http\Controllers\LoginController@index' );
