@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    echo 'Welcome';
 });
+
+Route::get('/hello' ,'App\Http\Controllers\HelloController@index' );
 
 Route::get('/login' ,'App\Http\Controllers\LoginController@index' );
 Route::post('/login' ,'App\Http\Controllers\LoginController@auth' );

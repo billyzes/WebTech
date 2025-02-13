@@ -29,7 +29,7 @@
 
                 <tbody>
                     <tr>
-                        <td>Computer</td>
+                        <th>Computer</th>
                         <td>Lenovo</td>
                         <td>80</td>
                         <td>40,232.00</td>
@@ -40,7 +40,7 @@
                     </tr>
 
                     <tr>
-                        <td>Cars</td>
+                        <th>Cars</th>
                         <td>Civic</td>
                         <td>2</td>
                         <td>140,232.00</td>
@@ -51,7 +51,7 @@
                     </tr>
 
                     <tr>
-                        <td>Fruit</td>
+                        <th>Fruit</th>
                         <td>Tomato</td>
                         <td>180</td>
                         <td>40.00</td>
@@ -62,7 +62,7 @@
                     </tr>
                 </tbody>
             </table>
-            <div button class="btn btn-md btn-success" style="width: 100px; height: 40px; margin-left: 1100px">
+            <div button class="btn btn-md btn-success" style="width: 100px; height: 40px; margin-left: 1150px">
                 Add</button>
             </div>
             </br>
