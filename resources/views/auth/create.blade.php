@@ -10,64 +10,72 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>Create</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f8f9fa;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 400px;
+    }
+  </style>
 </head>
 
 <body>
 
-  <div class="card">
-    <div class="card-body" style="width: 20rem;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="card shadow">
+        <div class="card-body">
 
-      <form class="row g-3">
+          <button class="btn btn-primary mb-3">Back</button>
 
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <form class="row g-3">
+
+
+            <div class="col-12 d-flex align-items-center">
+              <label for="categorySelect" class="form-label me-2">Categories:</label>
+              <select id="categorySelect" class="form-select flex-grow-1">
+                <option selected>Select Category</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+
+
+            <div class="col-12 d-flex align-items-center">
+              <label for="itemName" class="form-label me-2">Item Name:</label>
+              <input type="text" class="form-control flex-grow-1" id="itemName">
+            </div>
+
+
+            <div class="col-12 d-flex align-items-center">
+              <label for="price" class="form-label me-2">Price:</label>
+              <input type="number" class="form-control flex-grow-1" id="price">
+            </div>
+
+
+            <div class="col-12 d-flex align-items-center">
+              <label for="qty" class="form-label me-2">Qty:</label>
+              <input type="number" class="form-control flex-grow-1" id="qty">
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </div>
+          </form>
+
         </div>
-
-        <div class="col-md-6">
-          <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-        </div>
-
-        <div class="col-md-8">
-          <label for="inputEmail4" class="form-label">Item Name:</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-8">
-          <label for="inputEmail4" class="form-label">Price</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-8">
-          <label for="inputEmail4" class="form-label">Qty</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
-      </form>
-
-
-
+      </div>
     </div>
   </div>
-
-
 
 </body>
 
 </html>
-
-<style>
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
-
-  }
-</style>
